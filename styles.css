@@ -1,5 +1,6 @@
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 html {
@@ -39,6 +40,16 @@ a:hover {
   font-size: 200%;
 }
 
+ul {
+  list-style-position: inside;
+}
+ol > li {
+  text-align: left;
+}
+li {
+  margin-top: 10px;
+}
+
 #viewButton {
   margin-top: 30px;
 
@@ -65,6 +76,11 @@ section {
   font-size: xx-large;
   border-bottom: 1px solid white;
   text-align: center;
+}
+
+.description {
+  width: 50%;
+  margin: auto;
 }
 
 .aboutSplit {
@@ -102,10 +118,11 @@ section {
   font-size: x-large;
   text-align: center;
   margin: auto;
-  width: 200px;
+  width: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 #interactive > * {
@@ -113,7 +130,7 @@ section {
 }
 
 #fraction {
-  width: 100%;
+  width: 200px;
 }
 
 #fraction input {
@@ -122,6 +139,10 @@ section {
 
 #fraction hr {
   width: 100%;
+}
+
+#footnote {
+  text-align: center;
 }
 
 #faqSection {
@@ -155,13 +176,6 @@ footer a {
 
 /* TABLET */
 @media screen and (max-width: 1200px) {
-  #mobileNav {
-    display: block;
-  }
-  #desktopNav {
-    display: none;
-  }
-
   #intro {
     margin: auto;
     display: flex;
@@ -177,7 +191,7 @@ footer a {
     font-size: 150%;
   }
 
-  #aboutSplit {
+  .aboutSplit {
     flex-direction: column;
   }
 
@@ -191,17 +205,11 @@ footer a {
     margin: auto;
   }
 
-  #classRow {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #contactBar {
-    width: 100%;
-    font-size: 100%;
-  }
-
   .gamelinks {
     flex-direction: row;
+  }
+
+  .description {
+    width: 100%;
   }
 }
